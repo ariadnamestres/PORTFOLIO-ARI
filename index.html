@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset = "UTF-8">
-        <title> HOME </title>
-        <link rel="stylesheet" href="styles.css"/>
-    </head>
-<body>
-    
-    <nav>
-        <ul>
-            <li id= "li1"> <a href= index >Home</a></li>
-            <li id= "li2" > <a href= services>Services </a></li>
-            <li id= "li3"> <a href= contactme> Contact me </a> </li>
-          </ul>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <ul>
+        <li id="li1"><a href="index">Home</a></li>
+        <li id="li2"><a href="services">Services </a></li>
+        <li id="li3"><a href="contactme"> Contact me </a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </ul>
+    </div>
+    <div class="topnavresponsive" id="myTopnavresponsive" style="display:none">
+      <div id="li1"><a href="index">Home</a></div>
+      <div id="li2"><a href="services">Services </a></div>
+      <div id="li3"><a href="contactme"> Contact me </a></div>
+    </div>
     <main>
-       <figure>
-           <img src= "foto.png" alt="foto" style= "width:604px; height:655px;">
-       </figure>
-       <section class= "section1">
-           <h1 >Ariadna Mestres </h1>
-           <p >Orem <span class="destacado">ipsum </span> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-            el illum dolore eu feugiat nu zzril delenit augue duis dolore te feugait nulla facilisi. dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-            el illum dolore eu feugiat nu zzril delenit augue duis dolore te feugait nulla facilisi</p>
-           </section>
-
+      <figure>
+        <img src="foto.png" alt="foto" style="width: 600px; height: 600px" />
+      </figure>
+      <section class="section1">
+        <h1>Ariadna Mestres</h1>
+        <p>
+          Orem <span class="destacado">ipsum </span> dolor sit amet,
+          consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+          ut laoreet dolore magna aliquam erat volutpat. el illum dolore eu
+          feugiat nu zzril delenit augue duis dolore te feugait nulla facilisi.
+          dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+          euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. el
+          illum dolore eu feugiat nu zzril delenit augue duis dolore te feugait
+          nulla facilisi
+        </p>
+      </section>
     </main>
-    <footer> <p id= "copyright"> Copyright all rights reserved &copy; </p> </footer>
-</body>
+    <footer><p id="copyright">Copyright all rights reserved &copy;</p></footer>
 
-    
-</hmtl>
+    <script type="text/javascript" src="portfolio.js"></script>
+  </body>
+</html>

@@ -1,144 +1,206 @@
 body {
-    background-color:#F8EFED;
-    font-family: "calibri";
-  }
-
-nav {
-    background-color: #96858F;
-    width: 1440;
-    height: 69;
+  background-color: #f8efed;
+  font-family: "calibri";
 }
 
-footer {
-     background-color: #96858F;
-     padding: 0px;
-     display: flex;
-     align-self: flex-end;
+/* 
+BARRA DE NAVEGACIÓ */
+
+.topnav {
+  background-color: #96858f;
+  width: 1440;
+  height: 69;
+}
+.topnav .icon {
+  display: none;
+  width: 64px;
+  height: 50px;
+  font-size: 40px;
 }
 
-
-ul { 
-
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  
+.topnavresponsive {
+  display: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-li{ 
-    
-    border-radius: 10px;
-    display: inline;
-    text-decoration-line: none;
+li {
+  border-radius: 10px;
+  display: inline;
+  text-decoration-line: none;
 }
 
 #li1 {
-    float: left;
-    padding: 20px;
-    background-color: #FFEBFE;
-    margin: 20px;
-  
+  float: left;
+  padding: 20px;
+  background-color: #ffebfe;
+  margin: 20px;
 }
 #li2 {
-     float: left;
-     padding: 20px;
-     background-color: #FFEBFE;
-     margin: 20px
+  float: left;
+  padding: 20px;
+  background-color: #ffebfe;
+  margin: 20px;
 }
 #li3 {
-    float: right;
-    padding: 20px;
-    background-color: #FFEBFE;
-    margin: 20px;
+  float: right;
+  padding: 20px;
+  background-color: #ffebfe;
+  margin: 20px;
 }
 
 a {
-    color:rgb(73, 70, 70);
-    text-decoration-line: none;
-    
+  color: rgb(73, 70, 70);
+  text-decoration-line: none;
 }
 a:hover {
-    color: rgb(17, 16, 17);
+  color: rgb(17, 16, 17);
 }
 
-main { 
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
+/* 
+PEU DE PÀGINA */
+
+footer {
+  background-color: #96858f;
+  padding: 0px;
+  display: flex;
+  align-self: flex-end;
+}
+
+#copyright {
+  color: #ffffff;
+}
+
+/* ESTIL DE L'INDEX */
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .section1 {
-    background-color: #7c7a7a;
+  background-color: #b8a9a9;
+  width: 500px;
+  height: 550px;
+  border: none;
+  padding: 0px;
+  margin: 2px;
+  float: right;
+  margin-top: 30px;
+  margin-right: 100px;
+  color: black;
+}
+
+p {
+  font-size: 18px;
+  color: #eeeeee;
+  text-align: justify;
+  padding: 20px;
+  line-height: 35px;
+}
+
+h1 {
+  text-align: center;
+}
+.destacado {
+  color: rgba(240, 229, 210, 0.904);
+}
+
+ESTILO DE OTRAS PAG #name,
+#text {
+  background-color: #7c7a7a;
+  font-weight: bold;
+  padding: 40px;
+}
+
+form {
+  padding: 30px;
+  background-color: #96858f;
+  height: 100px;
+  margin-top: 100px;
+  text-align: center;
+  padding-bottom: 80px;
+  border-radius: 25px;
+}
+form:hover {
+  opacity: 0.8;
+}
+main {
+  height: 600px;
+}
+textarea {
+  width: 200px;
+  height: 50px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+input[type="text"] {
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  font-size: 14px;
+  background-color: #d9c8d9;
+}
+
+figure {
+  size: 80%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ESTILO SERVICES */
+
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* RESPONSIVE  */
+
+/* RESPONSIVE NAV */
+
+@media only screen and (max-width: 600px) {
+  .topnav li {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnavresponsive {
+    flex-direction: column;
+  }
+
+  /* INDEX CSS RESPONSIVE */
+  .section1 {
+    background-color: #96858f;
     width: 500px;
     height: 550px;
     border: none;
     padding: 0px;
     margin: 2px;
-    float: right;
-    margin-top: -600px;
-    margin-right: 100px;
-    color:black
-
-}
-
-p  {
-    font-size: 18px;
-    color: #EEEEEE;
-    text-align: justify;
-    padding: 20px;
-    line-height: 35px;
-}
-
-h1 {
-    text-align:center;
-    
-}
-.destacado {
-    color: rgba(240, 229, 210, 0.904);
-}
-
-#name, #text  {
-    background-color:#7c7a7a;
-    font-weight: bold;
-    padding: 40px;
-}
-#copyright {
-     color: #FFFFFF;
-
-}
-
-form {
-    padding: 30px;
-    background-color:#96858F;
-    height: 100px;
-    margin-top: 100px ;
-    text-align: center;
-    padding-bottom:80px;
-    border-radius: 25px;
-
-}
-form:hover {
-    opacity: 0.8;
-}
-main {
-    height: 600px;
-}
-textarea {
-    width: 200px;
-    height: 50px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    resize: none;
-  }
-  input[type=text] {
-      font-size: 14px;
+    float: center;
+    margin-top: 30px;
+    margin-right: ;
+    color: black;
   }
 
-  input[type=submit] {
-    font-size: 14px;
-    background-color:#D9C8D9;
-  };
+  figure {
+    display: none;
+  }
+}
