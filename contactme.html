@@ -2,17 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>CONTACT ME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>contact me </title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
-    <nav>
+    <div class="topnav" id="myTopnav">
       <ul>
         <li id="li1"><a href="index">Home</a></li>
         <li id="li2"><a href="services">Services </a></li>
         <li id="li3"><a href="contactme"> Contact me </a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </ul>
-    </nav>
+    </div>
+    <div class="topnavresponsive" id="myTopnavresponsive" style="display:none">
+      <div id="li1"><a href="index">Home</a></div>
+      <div id="li2"><a href="services">Services </a></div>
+      <div id="li3"><a href="contactme"> Contact me </a></div>
+    </div>
     <main>
       <form
         action="https://formcarry.com/s/fNJqKRiV0cz"
