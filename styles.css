@@ -66,21 +66,7 @@ a:hover {
   font-weight: bold;
 }
 
-/* 
-PEU DE PÀGINA */
-
-footer {
-  background-color: #96858f;
-  padding: 0px;
-  display: flex;
-  align-self: flex-end;
-}
-
-#copyright {
-  color: #ffffff;
-}
-
-/* ESTIL DE L'INDEX */
+/* INDEX */
 
 main {
   display: flex;
@@ -104,10 +90,11 @@ main {
 
 p {
   font-size: 18px;
-  color: #eeeeee;
+  color: #110f0f;
   text-align: justify;
   padding: 20px;
   line-height: 35px;
+  word-wrap: break-word;
 }
 
 h1 {
@@ -124,13 +111,12 @@ ESTILO DE OTRAS PAG #name,
   padding: 40px;
 }
 
-/* 3. ABOUT ME */
-
+/* CONTACT ME*/
 
 form {
-  padding: 30px;
+  padding: 22px;
   background-color: #96858f;
-  height: 200px;
+  height: 250px;
   width: 300px;
   margin-top: 100px;
   text-align: center;
@@ -165,7 +151,7 @@ input[type="submit"] {
 
 figure {
   size: 80%;
-  animation-name:changesize; 
+  animation-name: changesize;
   animation-duration: 5s;
 }
 
@@ -176,7 +162,19 @@ img {
   animation-direction: normal;
 }
 
-/* ESTILO SERVICES */
+/* SERVICES */
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.item {
+  margin: 20px;
+  width: 20%;
+  background-color: #cdc5cd;
+}
 
 #main {
   display: flex;
@@ -184,7 +182,7 @@ img {
   justify-content: space-around;
 }
 
-/* RESPONSIVE  */
+/* RESPONSIVE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
 
 /* RESPONSIVE NAV */
 
@@ -195,14 +193,13 @@ img {
   .topnav a.icon {
     float: right;
     display: block;
-    color:purple;
+    color: purple;
   }
   .topnav a.icon:hover {
     float: right;
     display: block;
-    color:black;
+    color: black;
   }
-
   .topnavresponsive {
     flex-direction: column;
   }
@@ -224,6 +221,27 @@ img {
   figure {
     display: none;
   }
+
+  /* SERVICES CSS RESPONSIVE */
+
+  .servicesresponsive {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* 
+PEU DE PÀGINA */
+
+footer {
+  background-color: #96858f;
+  padding: 0px;
+  display: flex;
+  align-self: flex-end;
+}
+
+#copyright {
+  color: #ffffff;
 }
 
 /* 
@@ -240,17 +258,34 @@ ANIMACIONES I TRANSICIONES */
 @keyframes sc {
   from {
     width: 80%;
-    height:100%;
+    height: 100%;
   }
   to {
     width: 100%;
-    height:105%;
+    height: 105%;
   }
 }
 
 @keyframes nb {
   from {
-    width:100px;
+    width: 100px;
     height: 100px;
   }
 }
+
+/* ESTILO CONTACTE */
+
+/* aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 20px;
+}
+
+aside#sidebar h3 {
+  text-align: center;
+}
+aside#sidebar.quote input,
+aside#sidebar.quote textarea {
+  width: 90%;
+  padding: 5px;
+} */
